@@ -15,7 +15,6 @@ export const BearBox = () => {
   useEffect(() => {
     const fetchOwner = async () => {
       const ownerLocation = await getOwner();
-      console.log(ownerLocation);
       setOwnerLocation(ownerLocation);
     };
 
