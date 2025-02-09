@@ -3,6 +3,7 @@ import { BasicUsage } from "../components/subjects/BasicUsage";
 import { GetSetImmer } from "../components/subjects/GetSetImmer";
 import { MultiStatesSelection } from "../components/subjects/MultiStatesSelection";
 import { SelectorAutogenerator } from "../components/subjects/SelectorAutogenerator";
+import { ReduxDevtolls } from "../components/subjects/ReduxDevtools";
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         path="/selector-autogenerator"
         element={<SelectorAutogenerator />}
       />
+      <Route path="/redux-devtools" element={<ReduxDevtolls />} />
     </Switch>
   );
 };

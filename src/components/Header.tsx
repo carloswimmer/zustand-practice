@@ -16,6 +16,9 @@ export const Header = () => {
         <Link to="/multi-states-selection">
           <button className="menu">Multi State</button>
         </Link>
+        <Link to="/redux-devtools">
+          <button className="menu">Devtolls</button>
+        </Link>
       </div>
     </header>
   );
