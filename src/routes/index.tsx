@@ -6,6 +6,7 @@ import { SelectorAutogenerator } from "../lessons/selector-autogenerator/Selecto
 import { ReduxDevtolls } from "../lessons/redux-devtools/ReduxDevtools";
 import { Persist } from "../lessons/persist/Persist";
 import { SubscribeWithSelector } from "../lessons/subscribe-with-selector/SubscribeWithSelector";
+import { GetStateSetState } from "../lessons/get-state-set-state/GetStateSetState";
 
 const Routes = () => {
   return (
@@ -27,6 +28,7 @@ const Routes = () => {
         path="/subscribe-with-selector"
         element={<SubscribeWithSelector />}
       />
+      <Route path="/get-state-set-state" element={<GetStateSetState />} />
     </Switch>
   );
 };
