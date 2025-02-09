@@ -4,6 +4,7 @@ import { GetSetImmer } from "../components/subjects/GetSetImmer";
 import { MultiStatesSelection } from "../components/subjects/MultiStatesSelection";
 import { SelectorAutogenerator } from "../components/subjects/SelectorAutogenerator";
 import { ReduxDevtolls } from "../components/subjects/ReduxDevtools";
+import { Persist } from "../components/subjects/Persist";
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
         element={<SelectorAutogenerator />}
       />
       <Route path="/redux-devtools" element={<ReduxDevtolls />} />
+      <Route path="/persist" element={<Persist />} />
     </Switch>
   );
 };

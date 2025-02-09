@@ -19,6 +19,9 @@ export const Header = () => {
         <Link to="/redux-devtools">
           <button className="menu">Devtolls</button>
         </Link>
+        <Link to="/persist">
+          <button className="menu">Persist</button>
+        </Link>
       </div>
     </header>
   );
