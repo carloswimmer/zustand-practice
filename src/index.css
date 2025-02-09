@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  color: rgb(85, 103, 121);
   margin: 0;
   padding: 0;
 }
@@ -43,8 +44,13 @@ button.menu {
 }
 
 button.menu:hover {
-  background-color: lightslategrey;
-  color: white;
+  background-color: rgba(225, 234, 245, 0.4);
+}
+
+button.menu:focus,
+button.menu:active {
+  border-color: #007bff;
+  color: #007bff;
 }
 
 .box {
@@ -61,11 +67,11 @@ button.menu:hover {
 }
 
 button {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: #007bff;
-  color: white;
+  color: rgba(255, 255, 255, 0.757);
   cursor: pointer;
   margin: 0.5rem 1rem 0 0;
 }

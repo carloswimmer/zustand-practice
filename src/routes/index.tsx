@@ -5,6 +5,7 @@ import { MultiStatesSelection } from "../components/subjects/MultiStatesSelectio
 import { SelectorAutogenerator } from "../components/subjects/SelectorAutogenerator";
 import { ReduxDevtolls } from "../components/subjects/ReduxDevtools";
 import { Persist } from "../components/subjects/Persist";
+import { SubscribeWithSelector } from "../components/subjects/SubscribeWithSelector";
 
 const Routes = () => {
   return (
@@ -22,6 +23,10 @@ const Routes = () => {
       />
       <Route path="/redux-devtools" element={<ReduxDevtolls />} />
       <Route path="/persist" element={<Persist />} />
+      <Route
+        path="/subscribe-with-selector"
+        element={<SubscribeWithSelector />}
+      />
     </Switch>
   );
 };

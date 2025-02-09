@@ -22,6 +22,9 @@ export const Header = () => {
         <Link to="/persist">
           <button className="menu">Persist</button>
         </Link>
+        <Link to="/subscribe-with-selector">
+          <button className="menu">Subscribe</button>
+        </Link>
       </div>
     </header>
   );
