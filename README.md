@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# Zustand Tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This tutorial aims to familiarize you with the capabilities and features of Zustand, an efficient state management library for React applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why Zustand?
 
-## Expanding the ESLint configuration
+- **Simplicity**: Zustand provides a simple and intuitive API for managing state.
+- **Performance**: It ensures efficient state updates and minimizes re-renders.
+- **Flexibility**: Zustand can be used with or without middleware, making it highly adaptable to various use cases.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Ensure you have the following installed:
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+To install the dependencies, run:
+
+```sh
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+or
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+yarn install
 ```
+
+### Running the project
+
+```sh
+npm run dev
+```
+
+or
+
+```sh
+yarn dev
+```
+
+## Lessons
+
+This tutorial is divided into several lessons, each focusing on different aspects of Zustand:
+
+1. **Basic Usage**: Introduction to Zustand and its basic usage.
+2. **Get/Set Immer**: Using Zustand with Immer for immutable state updates.
+3. **Selector Autogenerator**: Automatically generating selectors for state properties.
+4. **Multi States Selection**: Managing multiple states efficiently.
+5. **Redux DevTools**: Integrating Zustand with Redux DevTools for state debugging.
+6. **Persist**: Persisting state across sessions.
+7. **Subscribe with Selector**: Subscribing to state changes with selectors.
+8. **GetState SetState**: Access state from everywhere and separate actions from store.
+
+## Resources
+
+### Zustand Documentation
+
+For more detailed information, refer to the [Zustand documentation](https://github.com/pmndrs/zustand/tree/main/docs/guides).
+
+### Video Tutorial
+
+Watch the [video tutorial](https://www.youtube.com/watch?v=h0rQ73r8yag&list=PL1T-3Hf9FqXbH54aLLMWMpdn6OMa5TWOX) for a step-by-step guide.
+
+## License
+
+This project is licensed under the MIT License.
