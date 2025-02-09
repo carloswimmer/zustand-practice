@@ -1,8 +1,11 @@
 import { useShallow } from "zustand/shallow";
-import { useCatStore } from "../stores/catStore6";
-import { RenderIndicator } from "./RenderIndicator";
+import { useCatStore } from "../stores/catStore";
+import { RenderIndicator } from "../../../common/RenderIndicator";
 
 export const CatController = () => {
+  // const increaseBigCats = useCatStore.use.increaseBigCats();
+  // const increaseSmallCats = useCatStore.use.increaseSmallCats();
+
   const { increaseBigCats, increaseSmallCats } = useCatStore(
     useShallow((state) => ({
       increaseBigCats: state.increaseBigCats,

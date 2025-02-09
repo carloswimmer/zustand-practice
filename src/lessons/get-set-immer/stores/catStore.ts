@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
-import { createSelectors } from "./utils/createSelectors";
+import { createSelectors } from "../../../utils/createSelectors";
 import { devtools } from "zustand/middleware";
 
 interface ICatStore {

@@ -1,5 +1,5 @@
-import { useCatStore } from "../stores/catStore3";
-import { RenderIndicator } from "./RenderIndicator";
+import { useCatStore } from "../stores/catStore";
+import { RenderIndicator } from "../../../common/RenderIndicator";
 
 export const CatBox = () => {
   const bigCats = useCatStore((state) => state.cats.bigCats);

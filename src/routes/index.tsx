@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes as Switch } from "react-router-dom";
-import { BasicUsage } from "../components/subjects/BasicUsage";
-import { GetSetImmer } from "../components/subjects/GetSetImmer";
-import { MultiStatesSelection } from "../components/subjects/MultiStatesSelection";
-import { SelectorAutogenerator } from "../components/subjects/SelectorAutogenerator";
-import { ReduxDevtolls } from "../components/subjects/ReduxDevtools";
-import { Persist } from "../components/subjects/Persist";
-import { SubscribeWithSelector } from "../components/subjects/SubscribeWithSelector";
+import { BasicUsage } from "../lessons/basic-usage/BasicUsage";
+import { GetSetImmer } from "../lessons/get-set-immer/GetSetImmer";
+import { MultiStatesSelection } from "../lessons/multi-states-selection/MultiStatesSelection";
+import { SelectorAutogenerator } from "../lessons/selector-autogenerator/SelectorAutogenerator";
+import { ReduxDevtolls } from "../lessons/redux-devtools/ReduxDevtools";
+import { Persist } from "../lessons/persist/Persist";
+import { SubscribeWithSelector } from "../lessons/subscribe-with-selector/SubscribeWithSelector";
 
 const Routes = () => {
   return (

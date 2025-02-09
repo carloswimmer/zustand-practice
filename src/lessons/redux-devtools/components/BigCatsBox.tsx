@@ -1,5 +1,5 @@
-import { useCatStore } from "../stores/catStore6";
-import { RenderIndicator } from "./RenderIndicator";
+import { useCatStore } from "../stores/catStore";
+import { RenderIndicator } from "../../../common/RenderIndicator";
 
 export const BigCatsBox = () => {
   // Here we cannot use createSelectors because we only want to use the bigCats property

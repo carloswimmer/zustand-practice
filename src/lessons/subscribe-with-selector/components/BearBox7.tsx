@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useBearStore } from "../stores/bearStore7";
 import { useFoodStore } from "../stores/foodStore";
-import { RenderIndicator } from "./RenderIndicator";
+import { RenderIndicator } from "../../../common/RenderIndicator";
 import { shallow } from "zustand/shallow";
 
 export const BearBox = () => {
