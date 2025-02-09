@@ -1,30 +1,29 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const routes = [
+  { path: "/basic-usage", label: "Basic Usage" },
+  { path: "/get-set-immer", label: "Get Set Immer" },
+  { path: "/selector-autogenerator", label: "Selectors" },
+  { path: "/multi-states-selection", label: "Multi State" },
+  { path: "/redux-devtools", label: "Devtolls" },
+  { path: "/persist", label: "Persist" },
+  { path: "/subscribe-with-selector", label: "Subscribe" },
+  { path: "/get-state-set-state", label: "Get/SetState" },
+];
 
 export const Header = () => {
   return (
     <header>
       <div className="header">
-        <Link to="/basic-usage">
-          <button className="menu">Basic Usage</button>
-        </Link>
-        <Link to="/get-set-immer">
-          <button className="menu">Get Set Immer</button>
-        </Link>
-        <Link to="/selector-autogenerator">
-          <button className="menu">Selectors</button>
-        </Link>
-        <Link to="/multi-states-selection">
-          <button className="menu">Multi State</button>
-        </Link>
-        <Link to="/redux-devtools">
-          <button className="menu">Devtolls</button>
-        </Link>
-        <Link to="/persist">
-          <button className="menu">Persist</button>
-        </Link>
-        <Link to="/subscribe-with-selector">
-          <button className="menu">Subscribe</button>
-        </Link>
+        {routes.map((route) => (
+          <NavLink
+            key={route.path}
+            to={route.path}
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <button className="menu">{route.label}</button>
+          </NavLink>
+        ))}
       </div>
     </header>
   );

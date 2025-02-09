@@ -53,6 +53,11 @@ button.menu:active {
   color: #007bff;
 }
 
+.active > button.menu {
+  border-color: #007bff;
+  color: #007bff;
+}
+
 .box {
   position: relative;
   flex-grow: 1;
