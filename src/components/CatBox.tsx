@@ -1,4 +1,5 @@
-import { useCatStore } from "../stores/catStore";
+import { useCatStore } from "../stores/catStore3";
+import { RenderIndicator } from "./RenderIndicator";
 
 export const CatBox = () => {
   const bigCats = useCatStore((state) => state.cats.bigCats);
@@ -17,6 +18,7 @@ export const CatBox = () => {
         <button onClick={increaseBigCats}>add big cat</button>
         <button onClick={increaseSmallCats}>add small cat</button>
       </div>
+      <RenderIndicator />
     </div>
   );
 };

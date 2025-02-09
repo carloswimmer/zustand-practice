@@ -30,6 +30,7 @@ h1 {
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   margin-bottom: 1.5rem;
 }
@@ -38,6 +39,7 @@ button.menu {
   background-color: transparent;
   border: 1px solid lightslategrey;
   color: lightslategrey;
+  margin: 0;
 }
 
 button.menu:hover {
@@ -46,6 +48,7 @@ button.menu:hover {
 }
 
 .box {
+  position: relative;
   flex-grow: 1;
   flex-direction: column;
   padding: 1.5rem;
@@ -69,4 +72,11 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.render-number {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: large;
 }
