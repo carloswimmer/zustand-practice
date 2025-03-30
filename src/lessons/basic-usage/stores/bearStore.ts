@@ -16,10 +16,13 @@ export const useBearStore = create<IBearStore>()(
       removeAllBears: () => set({ bears: 0 }),
       getOwner: async () => {
         try {
-          const response = await fetch("https://api.github.com/users/1");
+          const response = await fetch("https://api.github.com/users/5");
+          if (!response.ok) {
+            throw new Error(response.status.toString());
+          }
           const owner = await response.json();
 
-          return owner.location;
+          return owner.location || "Unknown location";
         } catch (error) {
           console.error("Failed to fetch owner:", error);
           return "Unknown location";
