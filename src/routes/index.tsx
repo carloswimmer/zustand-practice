@@ -7,6 +7,7 @@ import { ReduxDevtolls } from "../lessons/redux-devtools/ReduxDevtools";
 import { Persist } from "../lessons/persist/Persist";
 import { SubscribeWithSelector } from "../lessons/subscribe-with-selector/SubscribeWithSelector";
 import { GetStateSetState } from "../lessons/get-state-set-state/GetStateSetState";
+import { WithContext } from "../lessons/context-with-store/WithContext";
 
 const Routes = () => {
   return (
@@ -29,6 +30,7 @@ const Routes = () => {
         element={<SubscribeWithSelector />}
       />
       <Route path="/get-state-set-state" element={<GetStateSetState />} />
+      <Route path="/context-with-store" element={<WithContext />} />
     </Switch>
   );
 };

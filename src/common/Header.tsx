@@ -9,6 +9,7 @@ const routes = [
   { path: "/persist", label: "Persist" },
   { path: "/subscribe-with-selector", label: "Subscribe" },
   { path: "/get-state-set-state", label: "Get/SetState" },
+  { path: "/context-with-store", label: "Context + Store" },
 ];
 
 export const Header = () => {

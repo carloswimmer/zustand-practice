@@ -65,6 +65,7 @@ button.menu:active {
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid lightgrey;
+  background-color: white;
 }
 
 .controls {
@@ -90,4 +91,9 @@ button:hover {
   top: 1.5rem;
   right: 1.5rem;
   font-size: large;
+}
+
+.web-component-simulation {
+  padding: 1rem;
+  border-radius: 1rem;
 }
