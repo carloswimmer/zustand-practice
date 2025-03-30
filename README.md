@@ -57,6 +57,7 @@ This tutorial is divided into several lessons, each focusing on different aspect
 6. **Persist**: Persisting state across sessions.
 7. **Subscribe with Selector**: Subscribing to state changes with selectors.
 8. **GetState SetState**: Access state from everywhere and separate actions from store.
+9. **Global context**: Isolate application stores with one context provider to use multiple instances of app.
 
 ## Resources
 
